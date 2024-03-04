@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORDLE!</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./imgs/Question.png" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">WORDLE!</h3>
+      <div class="wrap">
+        <section class="try1">
+          <input class="input" type="text" maxlength="1" />
+          <input class="input" type="text" maxlength="1" />
+          <input class="input" type="text" maxlength="1" />
+          <input class="input" type="text" maxlength="1" />
+          <input class="input" type="text" maxlength="1" />
+        </section>
+      </div>
+      <div class="buttonWrap">
+        <button>정답 확인 (Enter)</button>
+      </div>
+
+      <section class="desc">
+        <h5>총 5번의 기회가 주어집니다.</h5>
+        <h5>*HINT : HTML, CSS, Javascript에서 볼 수 있는 5글자 단어.</h5>
+      </section>
+    </div>
+    <div class="failModal">
+      <div class="modalWrap">
+        <button class="closeBtn"></button>
+        <h3>Fail..</h3>
+        <span>정답을 맞추지 못했습니다..! 🙁</span>
+        <h4 class="answer"></h4>
+      </div>
+    </div>
+    <div class="successModal">
+      <div class="modalWrap">
+        <button class="closeBtn"></button>
+        <h3>SUCCESS!!</h3>
+        <span>정답을 맞췄습니다! 🥳</span>
+        <h4 class="answer"></h4>
+      </div>
+    </div>
+  </body>
+</html>
