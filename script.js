@@ -19,7 +19,11 @@ const onChangeInput = () => {
   const inputs = document.querySelectorAll(`.try${trial} > .input`);
   inputs.forEach((input, index) => {
     input.addEventListener("input", () => {
-      if (index < 4) input.nextElementSibling.focus();
+      input.value = input.value.toLowerCase();
+      input.value = input.value.replace(/[^a-zA-Z]/g, "");
+      if (input.value !== "" && index < 4) {
+        input.nextElementSibling.focus();
+      }
     });
   });
 };
